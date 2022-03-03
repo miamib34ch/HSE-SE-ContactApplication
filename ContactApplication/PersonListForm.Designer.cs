@@ -52,7 +52,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(127, 38);
             this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Добавить";
+            this.btnAdd.Text = "Добавить...";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -78,6 +78,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -88,6 +90,7 @@
             this.dataGridView1.DataSource = this.personsBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(544, 296);
             this.dataGridView1.TabIndex = 3;
             // 
@@ -129,7 +132,7 @@
             // 
             this.personsTableAdapter.ClearBeforeFill = true;
             // 
-            // contactsTableAdapter1
+            // contactsTableAdapter
             // 
             this.contactsTableAdapter.ClearBeforeFill = true;
             // 
